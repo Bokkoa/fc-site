@@ -35,6 +35,9 @@ yarn build
 
 ## Important
 ---
+
+- The coffee cup logo is from my authority and is not free use! :( is for my personal brand, sorry.
+
 - Thanks to [Peter Fazekas] on Pexels for his photo (background01 in the project)
 - Thanks to [Brett Sayles] on Pexels for his photo (background02 in the project)
 - Thanks to [Martin Schneider] on Pexels for his photo (background03 in the project)

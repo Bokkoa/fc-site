@@ -1,0 +1,39 @@
+@import url('./_animations.scss');
+@import url('./_mixins.scss');
+@import url('./_fonts.scss');
+@import url('./_variables.scss');
+
+*{
+    box-sizing: border-box;
+}
+
+body, #app{
+    margin: 0;
+    padding: 0;
+}
+
+
+.section{
+   @include generic-section();
+}
+
+
+h1{
+    font-size: $font-size-header;
+}
+
+h2{
+    font-size: $font-size-xl;
+}
+
+h3{
+    font-size: $font-size-lg;
+}
+
+h4{
+    font-size: $font-size-sm;
+}
+
+h5, h6, p{
+    font-size: $font-size-xs;
+}

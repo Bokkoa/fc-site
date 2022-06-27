@@ -35,9 +35,9 @@ yarn build
 
 ## Important
 ---
-Thanks to [Peter Fazekas] on Pexels for his photo (background01 in the project)
-Thanks to [Brett Sayles] on Pexels for his photo (background02 in the project)
-Thanks to [Martin Schneider] on Pexels for his photo (background03 in the project)
+- Thanks to [Peter Fazekas] on Pexels for his photo (background01 in the project)
+- Thanks to [Brett Sayles] on Pexels for his photo (background02 in the project)
+- Thanks to [Martin Schneider] on Pexels for his photo (background03 in the project)
 
 [Peter Fazekas]: <https://www.pexels.com/es-es/foto/carretera-de-hormigon-entre-campos-de-hierba-1137337//>
 [Brett Sayles]:  <https://www.pexels.com/es-es/foto/foto-de-paisaje-de-arboles-de-hojas-verdes-bajo-nubes-nimbus-1021609/>

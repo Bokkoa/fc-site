@@ -1,6 +1,6 @@
 
 <template>
-    <header class="nav__header nav__header__shadow">
+    <header class="nav__header" :class="(scrollPosition > 100 ) ? 'nav__header__shadow expand-padding-animation' : 'shrink-padding-animation' ">
         <nav class="nav__nav">
             <div class="nav__logo">
                 <img class="logo-animation logo" src="../assets/imgs/logo.png" alt="">
@@ -26,16 +26,36 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from '@vue/runtime-core'
+import { computed, defineComponent, onMounted, Ref, ref } from '@vue/runtime-core'
+
 export default defineComponent({
-    name: 'Navbar'
+    name: 'Navbar',
+    setup(){
+        const scrollPosition: Ref<number> = ref(0);
+
+
+        function updateScroll(){
+            scrollPosition.value = window.scrollY;
+        }
+
+        onMounted(() => {
+            window.addEventListener('scroll', updateScroll);
+        })
+
+
+        return {
+            scrollPosition
+        }
+            
+        
+    }
 });
 </script>
 
 <style lang="scss" scoped>
 
 .nav__header__shadow{
-    box-shadow: rgba(black, 0.1) 0px 5px 10px 0px;
+    box-shadow: rgba($color-darker, 0.35) 0px 5px 10px 0px;
 }
 
 .nav__header{
@@ -51,7 +71,6 @@ export default defineComponent({
             width: 100vw;
             display: flex;
             justify-content: space-between;
-            // padding: 0.5rem calc((100vw-1200px) / 2)
             padding-right: 2vw;
             padding-left: 2vw;
             padding-top: 15px;
@@ -66,6 +85,7 @@ export default defineComponent({
             display: flex;
             align-items: space-between;
             li{
+                color: $color-accent;
                 list-style: decimal-leading-zero;
                 font-size: $font-size-sm;
                 margin-left: 2vw;

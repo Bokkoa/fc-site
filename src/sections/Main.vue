@@ -71,7 +71,7 @@ export default defineComponent({
             font-size: $font-size-xxl;
             .main__connotation-letter{
                 font-size: $font-size-xxl;
-                color: $color-neutral-light;
+                color: $color-accent;
             }
         }
     }
@@ -96,6 +96,7 @@ export default defineComponent({
     color: $color-accent;
     border-color: $color-accent;
     font-size: $font-size-sm + .1rem;
+    cursor: pointer;
 }
 
 

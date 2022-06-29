@@ -4,16 +4,16 @@ This is my own webpage, currently is in progress.
 
 ## Todo
 ---
-- Modify the logo's colors
-- Select better pallete colors
-- Random background imagen when loads
-- Append cv to main section
-- Add About section
-- Add Experiencie section
-- Upload assets for projects
-- Add Projects section
-- Add Contact section
-- Think about favorite technologies section
+- [] Modify the logo's colors
+- [] Select better pallete colors
+- [x] Random background imagen when loads
+- [] Append cv to main section
+- [] Add About section
+- [] Add Experiencie section
+- [] Upload assets for projects
+- [] Add Projects section
+- [] Add Contact section
+- [] Think about favorite technologies section
 
 ## Installation 
 ---

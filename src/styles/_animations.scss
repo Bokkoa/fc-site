@@ -65,6 +65,43 @@
 	transform: translate3d(0, 0, 0);
 }
 
+// PADDING
+.shrink-padding-animation{
+	animation-name: shrinkPadding;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-out;
+	animation-duration: 300ms;
+	animation-fill-mode: forwards;
+}
+
+.expand-padding-animation{
+	animation-name: expandPadding;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-out;
+	animation-duration: 300ms;
+	animation-fill-mode: forwards;
+}
+
+@keyframes shrinkPadding{
+	0%{
+		padding-bottom: 1em;
+	}
+	100%{
+		padding-bottom: 0;
+	}
+}
+
+@keyframes expandPadding{
+	
+	0%{
+		padding-bottom: 0;
+	}
+
+	100%{
+		padding-bottom: 1em;
+	}
+}
+
 // LOGO
 .logo-animation {
 	animation-name: logoAnimation;

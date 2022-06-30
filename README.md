@@ -6,6 +6,7 @@ This is my own webpage, currently is in progress.
 ---
 - [ ] Modify the logo's colors
 - [ ] Select better pallete colors
+- [ ] Fix the vw for bg image and navbar on tablet and mobile size
 - [x] Random background imagen when loads
 - [ ] Append cv to main section
 - [ ] Add About section

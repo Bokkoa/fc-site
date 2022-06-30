@@ -69,7 +69,7 @@ export default defineComponent({
         display:block;
         width: 100%;
         min-height: 80vh;
-        opacity: .8;
+        opacity: .7;
         width: 100%;
         height: 600px;
     }

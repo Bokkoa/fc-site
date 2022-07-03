@@ -49,7 +49,7 @@ export default defineComponent({
 
 // with image
 .background__section{
-    width: 99vw;
+    width: 100%;
     min-height: 76vh;
     padding: 0;
     overflow: hidden;
@@ -66,12 +66,14 @@ export default defineComponent({
     }
 
     .background__image{
+
         display:block;
         width: 100%;
         min-height: 80vh;
         opacity: .7;
         width: 100%;
         height: 600px;
+
     }
     
 }

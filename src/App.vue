@@ -4,6 +4,7 @@
       <Background />
       <Navbar />
       <Home />
+      <AuxiliarResources />
   </div>
 </template>
 
@@ -13,6 +14,7 @@ import { defineComponent } from "@vue/runtime-core"
 import  Navbar from '@/components/Navbar.vue';
 import Home from '@/views/Home.vue';
 import Background from "./components/Background.vue";
+import AuxiliarResources from "./components/AuxiliarResources.vue";
 
 export default defineComponent({
   name: 'App',
@@ -20,7 +22,8 @@ export default defineComponent({
     // Loader    
     Navbar,
     Home,
-    Background
+    Background,
+    AuxiliarResources
 },
 })
 </script>

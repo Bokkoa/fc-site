@@ -29,6 +29,18 @@ export default defineComponent({
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include retina{
+        margin-top: 5em;
+    }
+    
+    @include mobile {
+        margin-top: 4em;
+    }
+
+    @include mini-mobile{
+        margin-top: 4em;
+    }
 }
 
 </style>

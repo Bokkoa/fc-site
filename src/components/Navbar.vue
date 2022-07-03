@@ -63,17 +63,17 @@ export default defineComponent({
     background-color: $color-darkest;
     display: flex;
     position: fixed;
-    width: 99vw;
+    width: 100%;
     z-index: 99999;
-    
 
     .nav__nav{
-            width: 100vw;
+            width: 100%;
             display: flex;
             justify-content: space-between;
             padding-right: 2vw;
             padding-left: 2vw;
-            padding-top: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
     }
 
     .nav__links{
@@ -84,7 +84,13 @@ export default defineComponent({
         ol{
             display: flex;
             align-items: space-between;
+
             li{
+
+                @include ipad{
+                    margin-left: 3vw;
+                    margin-right: 3vw;
+                }
                 color: $color-accent;
                 list-style: decimal-leading-zero;
                 font-size: $font-size-sm;

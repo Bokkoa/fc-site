@@ -120,7 +120,7 @@
 	animation-play-state: running;    
 }
 
-@keyframes logoAnimation {
+@keyframes spinAnimation {
 	0% {
 		-webkit-transform: rotate(0deg);
 		-moz-transform: rotate(0deg);
@@ -133,4 +133,31 @@
 		-ms-transform: rotate(360deg);
 		transform: rotate(360deg);
 	}
+}
+
+
+
+/* PULSE FOR BORDER OF TRANSPARENT PNG */
+@keyframes pulse-accent{
+    from { 
+        /* border-color: #749a02;  */
+        -webkit-filter: drop-shadow (0 0 9px rgba(51, 51, 51, 0)) 
+        drop-shadow(-1px -1px 0  rgba(51, 51, 51, 0));
+        filter: drop-shadow(1px 1px 0  rgba(51, 51, 51, 0)) 
+        drop-shadow(-1px -1px 0  rgba(51, 51, 51, 0));
+    }
+    50% { 
+        /* border-color: #91bd09;  */
+        -webkit-filter: drop-shadow (0 0 2px $color-accent)
+        drop-shadow(1px -1px 2px $color-accent);
+        filter: drop-shadow(1px 1px 2px $color-accent) 
+        drop-shadow(-1px -1px 2px $color-accent);
+     }
+    to { 
+        /* border-color: #749a02;  */
+        -webkit-filter: drop-shadow (0 0 10px rgba(51, 51, 51, 0))
+        drop-shadow(-1px -1px 0 rgba(51, 51, 51, 0));
+        filter: drop-shadow(1px 1px 0 rgba(51, 51, 51, 0)) 
+        drop-shadow(-1px -1px 0 rgba(51, 51, 51, 0)); 
+    }
 }

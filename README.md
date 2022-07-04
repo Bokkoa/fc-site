@@ -37,7 +37,7 @@ yarn build
 ## Important
 ---
 
-- The coffee cup logo is from my authority and is not free use! :( is for my personal brand, sorry.
+- The coffee cup or the bash with "f_c" text logo is from my authority and is not free use! :( is for my personal brand, sorry.
 
 - Thanks to [Peter Fazekas] on Pexels for his photo (background01 in the project)
 - Thanks to [Brett Sayles] on Pexels for his photo (background02 in the project)

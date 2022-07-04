@@ -3,7 +3,7 @@
     <header class="nav__header" :class="(scrollPosition > 100 ) ? 'nav__header__shadow expand-padding-animation' : 'shrink-padding-animation' ">
         <nav class="nav__nav">
             <div class="nav__logo">
-                <img class="logo-animation logo" src="../assets/imgs/logo.png" alt="">
+                <img class="logo" src="../assets/imgs/logo.svg" alt="">
             </div>
             <div class="nav__links">
                 <ol>
@@ -119,7 +119,8 @@ export default defineComponent({
 }
 
 .logo{
-    width: 3em;
+    width: 4em;
+    animation: pulse-accent infinite 3s linear;
 }
 
 </style>

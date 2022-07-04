@@ -3,20 +3,27 @@
     <div class="auxiliar">
 
         <div class="auxiliar__social_links_tree">
-            <div class="auxiliar__social_link">
-                <div class="auxiliar__social_img github_icon"></div>
-                <p class="auxiliar__social_title">Github</p>
-            </div>
 
-             <div class="auxiliar__social_link">
-                 <div class="auxiliar__social_img gitlab_icon"></div>
-                <p class="auxiliar__social_title">Gitlab</p>
-            </div>
+            <a href="https://github.com/Bokkoa">
+                <div class="auxiliar__social_link animate__animated animate__fadeInUp">
+                    <div class="auxiliar__social_img github_icon"></div>
+                    <p class="auxiliar__social_title">Github</p>
+                </div>
+            </a>
+            
+            <a href="https://gitlab.com/Bokkoa">
+                <div class="auxiliar__social_link animate__animated animate__fadeInUp">
+                    <div class="auxiliar__social_img gitlab_icon"></div>
+                    <p class="auxiliar__social_title">Gitlab</p>
+                </div>
+            </a>
 
-            <div class="auxiliar__social_link">
-                <div class="auxiliar__social_img linkedin_icon"></div>
-                <p class="auxiliar__social_title">Linkedin</p>
-            </div>
+            <a href="https://www.linkedin.com/in/bokkoa/">
+                <div class="auxiliar__social_link animate__animated animate__fadeInUp">
+                    <div class="auxiliar__social_img linkedin_icon"></div>
+                    <p class="auxiliar__social_title">Linkedin</p>
+                </div>
+            </a>
        
         </div> 
 
@@ -59,6 +66,12 @@ export default defineComponent({
             display: flex;
             flex-direction: column;
             width: 8em;
+
+            a{
+                color: $color-primary;
+                text-decoration: none;
+            }
+            
         }
 
         &__social_link{
@@ -109,5 +122,11 @@ export default defineComponent({
             mask: url('../assets/imgs/icons/github.svg') no-repeat center / contain;
             -webkit-mask: url('../assets/imgs/icons/github.svg') no-repeat center / contain;
         }
+    }
+
+
+    // ANIMATION DELAY (plus 2.25s for the title animation)
+    @for $i from 1 to 2 {
+        .auxiliar__social_links_tree div:nth-child(#{$i}) { animation-delay: ($i * 0.45s) + 2.25s; }
     }
 </style>

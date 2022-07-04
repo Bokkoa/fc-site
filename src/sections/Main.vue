@@ -100,7 +100,7 @@ export default defineComponent({
 }
 
 
-@for $i from 1 to 10 {
+@for $i from 1 to 6 {
   .main__content div:nth-child(#{$i}) { animation-delay: $i * 0.45s; }
 }
 </style>

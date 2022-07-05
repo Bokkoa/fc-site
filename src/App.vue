@@ -3,6 +3,7 @@
       <!-- <Loader /> -->
       <Background />
       <Navbar />
+      <!-- <router-view/> -->
       <Home />
       <AuxiliarResources />
   </div>
@@ -12,16 +13,16 @@
 import { defineComponent } from "@vue/runtime-core"
 // import Loader from '@/components/Loader.vue';
 import  Navbar from '@/components/Navbar.vue';
-import Home from '@/views/Home.vue';
 import Background from "./components/Background.vue";
 import AuxiliarResources from "./components/AuxiliarResources.vue";
+import Home from '@/views/Home.vue';
 
 export default defineComponent({
   name: 'App',
   components:{
-    // Loader    
+    // Loader   
+    Home, 
     Navbar,
-    Home,
     Background,
     AuxiliarResources
 },

@@ -7,8 +7,8 @@
             </div>
             <div class="main__title animate__animated animate__fadeInLeft">
                 <h1 class="main__name">
-                    <b class="main__connotation-letter">F</b>elipe 
-                    <b class="main__connotation-letter">C</b>ruz.
+                    Felipe 
+                    Cruz.
                 </h1>
             </div>
             <div class="main__title animate__animated animate__fadeInLeft">
@@ -22,9 +22,9 @@
                 </p>
             </div>
             <div class="animate__animated animate__fadeIn">
-                <button id="cv-button">
+                <a id="cv-button" :href="`${baseUrl}/docs/CV.pdf`" target="_blank">
                     ¡Descarga mi CV!
-                </button>
+                </a>
             </div>
 
         </div>
@@ -33,10 +33,20 @@
 
 
 <script lang="ts">
-import { defineComponent } from "@vue/runtime-core"
+import { defineComponent, ref } from "@vue/runtime-core"
+import { useStore } from "vuex"
 
 export default defineComponent({
-    name: 'Main'
+    name: 'Main',
+    setup(){
+        const store = useStore();
+
+        const baseUrl = ref( store.state.baseUrl );
+
+        return {
+            baseUrl
+        }
+    }
 })
 </script>
 
@@ -62,41 +72,46 @@ export default defineComponent({
             margin: .5vh;
         }
         .main__job{
+            color: $color-tertiary;
             font-size: $font-size-xl;
         }
         .main__introduction{
+            color: $color-tertiary;
             font-size: $font-size-md;
         }
         .main__name{
             font-size: $font-size-xxl;
-            .main__connotation-letter{
-                font-size: $font-size-xxl;
-                color: $color-accent;
-            }
+            // .main__connotation-letter{
+            //     font-size: $font-size-xxl;
+            //     color: $color-accent;
+            // }
         }
     }
     .main__description{
         font-size: $font-size-sm;
+        color: $color-tertiary;
     }
 }
 
 #cv-button{
-    border-radius: $border-radius-sm;
-    padding: 1em;
     background-color: transparent;
-    font-weight: bold;
-    color: $color-neutral-light;
-    border-color: $color-neutral-light;
+    border-color: $color-accent;
+    border-radius: $border-radius-sm;
     border-style: solid;
+    color: $color-accent;
+    display: inline-block; 
+    font-weight: bold;
+    padding: 1em;
+    text-decoration: none;
     transition: .2s;
 }
 
 #cv-button:hover{
     background-color: $color-darker;
-    color: $color-accent;
     border-color: $color-accent;
-    font-size: $font-size-sm + .1rem;
+    color: $color-accent;
     cursor: pointer;
+    font-size: $font-size-sm + .05rem;
 }
 
 

@@ -88,9 +88,16 @@ export default defineComponent({
             li{
 
                 @include ipad{
-                    margin-left: 3vw;
-                    margin-right: 3vw;
+                    margin-left: 4vw;
+                    margin-right: 4vw;
+                    font-size: $font-size-xs;
                 }
+
+                @include retina{
+                    margin-left: 5vw;
+                }
+            
+
                 color: $color-accent;
                 list-style: decimal-leading-zero;
                 font-size: $font-size-sm;

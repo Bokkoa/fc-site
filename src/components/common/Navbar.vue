@@ -3,7 +3,7 @@
     <header class="nav__header" :class="(scrollPosition > 100 ) ? 'nav__header__shadow expand-padding-animation' : 'shrink-padding-animation' ">
         <nav class="nav__nav">
             <div class="nav__logo">
-                <img class="logo" src="../assets/imgs/logo.svg" alt="">
+                <img class="logo" src="../../assets/imgs/logo.svg" alt="">
             </div>
             <div class="nav__links">
                 <ol>
@@ -26,7 +26,7 @@
 </template>
 
 <script lang="ts">
-import { computed, defineComponent, onMounted, Ref, ref } from '@vue/runtime-core'
+import { defineComponent, onMounted, Ref, ref } from '@vue/runtime-core'
 
 export default defineComponent({
     name: 'Navbar',

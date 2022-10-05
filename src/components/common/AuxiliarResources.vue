@@ -109,18 +109,18 @@ export default defineComponent({
         }
 
         .gitlab_icon{
-            mask: url('../assets/imgs/icons/gitlab.svg') no-repeat center / contain;
-            -webkit-mask: url('../assets/imgs/icons/gitlab.svg') no-repeat center / contain;
+            mask: url('../../assets/imgs/icons/gitlab.svg') no-repeat center / contain;
+            -webkit-mask: url('../../assets/imgs/icons/gitlab.svg') no-repeat center / contain;
         }
 
         .linkedin_icon{
-            mask: url('../assets/imgs/icons/linkedin.svg') no-repeat center / contain;
-            -webkit-mask: url('../assets/imgs/icons/linkedin.svg') no-repeat center / contain;
+            mask: url('../../assets/imgs/icons/linkedin.svg') no-repeat center / contain;
+            -webkit-mask: url('../../assets/imgs/icons/linkedin.svg') no-repeat center / contain;
         }
 
         .github_icon{
-            mask: url('../assets/imgs/icons/github.svg') no-repeat center / contain;
-            -webkit-mask: url('../assets/imgs/icons/github.svg') no-repeat center / contain;
+            mask: url('../../assets/imgs/icons/github.svg') no-repeat center / contain;
+            -webkit-mask: url('../../assets/imgs/icons/github.svg') no-repeat center / contain;
         }
     }
 

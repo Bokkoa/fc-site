@@ -8,8 +8,8 @@ This is my own webpage, currently is in progress.
 - [ ] Select better pallete colors
 - [ ] Fix the vw for bg image and navbar on tablet and mobile size
 - [x] Random background imagen when loads
-- [ ] Append cv to main section
-- [ ] Add About section
+- [x] Append cv to main section
+- [x] Add About section
 - [ ] Add Experiencie section
 - [ ] Upload assets for projects
 - [ ] Add Projects section

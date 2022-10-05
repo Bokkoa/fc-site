@@ -24,6 +24,14 @@ export const jobs:IJob[] = [
                 description: "Application development and support for internal workflow areas improvement (HR, Finances, Local IT, etc)",
                 special: false
             },
+            {
+                description: "Core IT, a Local IT customized system for assets management and resources, made in Laravel.",
+                special: false,
+            },
+            {
+                description: "My Lap, laptops management system, it records the access and exit of resources from the company, this project reach the 200% effectivity than the expected quantity.",
+                special: true
+            }
         ]
     }
 

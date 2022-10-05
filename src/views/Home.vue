@@ -12,11 +12,11 @@
 <script lang="ts">
 import { defineComponent } from "@vue/runtime-core";
 
-import Projects from '@/sections/Projects.vue'
-import About from '@/sections/About.vue'
-import Experiencie from '@/sections/Experiencie.vue'
-import Main from '@/sections/Main.vue';
-import Contact from '@/sections/Contact.vue'
+import Projects from '@/components/sections/Projects.vue'
+import About from '@/components/sections/About.vue'
+import Experiencie from '@/components/sections/Experiencie.vue'
+import Main from '@/components/sections/Main.vue';
+import Contact from '@/components/sections/Contact.vue'
 
 export default defineComponent({
     name: "Home",

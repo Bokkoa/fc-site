@@ -3,7 +3,7 @@
         <div class="content main__content">
 
             <div class="main__title animate__animated animate__fadeInLeft">
-                <h4 class="main__introduction">Hola, mi nombre es </h4>
+                <h4 class="main__introduction">Hello, my name is </h4>
             </div>
             <div class="main__title animate__animated animate__fadeInLeft">
                 <h1 class="main__name">
@@ -12,18 +12,18 @@
                 </h1>
             </div>
             <div class="main__title animate__animated animate__fadeInLeft">
-                <h3 class="main__job">Soy ingeniero de software.</h3>
+                <h3 class="main__job">I'm a software engineer.</h3>
             </div>
             <div class="animate__animated animate__fadeIn">
-
-                <p class="main__description">Soy ingeniero de software especializado en el desarrollo backend y
-                    (Ocasionalmente) desarrollo frontend. Actualmente estoy desarrollando un
-                    proyecto de gestión de almacenes (WMS).
+                <p class="main__description">I'm a software engineer speciallized in backend side development and (ocassionally)
+                    a frontend developer. 
+                    <br>
+                    Currently i'm have a Tech lead developer role for multiple warehouse management software applications and features.
                 </p>
             </div>
             <div class="animate__animated animate__fadeIn">
                 <a id="cv-button" :href="`${baseUrl}/docs/CV.pdf`" target="_blank">
-                    ¡Descarga mi CV!
+                    Download my CV!
                 </a>
             </div>
 
@@ -80,6 +80,7 @@ export default defineComponent({
             font-size: $font-size-md;
         }
         .main__name{
+            color: $color-tertiary;
             font-size: $font-size-xxl;
             // .main__connotation-letter{
             //     font-size: $font-size-xxl;

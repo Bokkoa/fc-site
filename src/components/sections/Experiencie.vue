@@ -1,7 +1,7 @@
 <template>
     <section class="section experience__section">
         <div class="content experience__content">
-            <h2 class="experience__title">Experience Section</h2>
+            <h2 class="experience__title title__section">Experience Section</h2>
         </div>
     </section>
 </template>

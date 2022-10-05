@@ -8,13 +8,13 @@
             <div class="nav__links">
                 <ol>
                     <li>
-                        <a class="underlined fade-in" href="#" @click.prevent="">Experiencia</a>
+                        <a class="underlined fade-in" href="#" @click.prevent="">Experiencie</a>
                     </li>
                     <li>
-                        <a class="underlined fade-in" href="#" @click.prevent="">Proyectos</a>
+                        <a class="underlined fade-in" href="#" @click.prevent="">Projects</a>
                     </li>
                     <li>
-                        <a class="underlined fade-in" href="#" @click.prevent="">Contactame</a>
+                        <a class="underlined fade-in" href="#" @click.prevent="">Contact</a>
                     </li>
                 </ol>
             </div>

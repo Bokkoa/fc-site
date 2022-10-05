@@ -10,11 +10,48 @@
 body, #app{
     margin: 0;
     padding: 0;
+
+    // initializer for section counts
+    counter-reset: section;
 }
 
 
 .section{
    @include generic-section();
+
+   .content{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.title__section{
+    font-size: $font-size-lg;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    white-space: nowrap;
+    
+    &::after{
+        box-sizing: inherit;
+        content: "";
+        display: block;
+        position: relative;
+        top: 5px;
+        width: 20rem;
+        height: 1px;
+        margin-left: 20px;
+        background-color: $color-accent;
+
+    }
+
+    &::before{
+        box-sizing: inherit;
+        counter-increment: section;
+        margin-right: 1rem;
+        color: $color-accent;
+        content: "0" counter(section) ".";
+    }
 }
 
 

@@ -1,5 +1,5 @@
 
-interface IJob {
+export interface IJob {
     id: number;
     company: string;
     from: string;
@@ -9,7 +9,7 @@ interface IJob {
     activities: IJobActivities[];
 }
 
-interface IJobActivities{
+export interface IJobActivities{
     description: string;
     special: boolean;
 }
@@ -28,11 +28,11 @@ export const jobs:IJob[] = [
                 special: false
             },
             {
-                description: "Core IT, a Local IT customized system for assets management and resources, made in Laravel.",
+                description: '"Core IT", a Local IT customized system for assets management and resources, made in Laravel.',
                 special: false,
             },
             {
-                description: "My Lap, laptops management system, it records the access and exit of resources from the company, this project reach the 200% effectivity than the expected quantity.",
+                description: '"My Lap", laptops management system, it records the access and exit of resources from the company, this project reach the 200% effectivity than the expected quantity.',
                 special: true
             }
         ]
@@ -151,7 +151,7 @@ export const jobs:IJob[] = [
             },
             {
                 description: "Learning path's creation for each developer member focused on their role specialization.",
-                special: true,
+                special: false,
             },
             {
                 description: "Architecture definition with a transition porpuse, it was segmented in different phases to reach an scalable architecture and multi-tenat SaaS software",

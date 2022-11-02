@@ -51,10 +51,10 @@
                 <li>Laravel</li>
                 <li>Node</li>
                 <li>NestJS</li>
-                <li>.NET Core</li>
-                <li>GO</li>
+                <!-- <li>.NET Core</li> -->
+                <!-- <li>GO</li> -->
                 <li>Docker</li>
-                <li>Django</li>
+                <!-- <li>Django</li> -->
             </ul>
 
         </div>

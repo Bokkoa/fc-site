@@ -10,11 +10,11 @@ This is my own webpage, currently is in progress.
 - [x] Random background imagen when loads
 - [x] Append cv to main section
 - [x] Add About section
-- [ ] Add Experiencie section
+- [x] Add Experiencie section
 - [ ] Upload assets for projects
 - [ ] Add Projects section
 - [ ] Add Contact section
-- [ ] Think about favorite technologies section
+- [x] Think about favorite technologies section
 
 ## Installation 
 ---

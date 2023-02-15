@@ -48,10 +48,10 @@
             <ul class="about__stack">
                 <li>React</li>
                 <li>Vue</li>
-                <li>Laravel</li>
+                <!-- <li>Laravel</li> -->
                 <li>Node</li>
                 <li>NestJS</li>
-                <!-- <li>.NET Core</li> -->
+                <li>.NET Core</li>
                 <!-- <li>GO</li> -->
                 <li>Docker</li>
                 <!-- <li>Django</li> -->

@@ -42,7 +42,7 @@ export const jobs:IJob[] = [
         company: 'UDG (Social Service)',
         from: 'October 2019',
         to: 'August 2020',
-        role: 'Fullstack Engineer',
+        role: 'Fullstack Developer',
         companyLink: 'http://www.cucei.udg.mx/',
         activities: [
             {
@@ -54,7 +54,7 @@ export const jobs:IJob[] = [
                 special: false,
             },
             {
-                description: "Fullstack development in Vue and Node",
+                description: "Fullstack development in Vue and NodeJS",
                 special: false
             }
         ]
@@ -86,7 +86,7 @@ export const jobs:IJob[] = [
         company: 'Contalite',
         from: 'June 2020',
         to: 'July 2021',
-        role: 'Fullstack developer',
+        role: 'Fullstack Developer',
         companyLink: 'https://contalite.com/',
         activities: [
             {
@@ -107,7 +107,7 @@ export const jobs:IJob[] = [
         id: 5,
         company: 'Altatec',
         from: 'June 2021',
-        to: 'Current',
+        to: 'July 2022',
         role: 'SemiSR Developer',
         companyLink: 'https://altatec-de-occidente-sa-de-cv.negocio.site/',
         activities: [
@@ -136,13 +136,21 @@ export const jobs:IJob[] = [
     {
         id: 6,
         company: 'Altatec',
-        from: 'June 2021',
+        from: 'July 2022',
         to: 'Current',
         role: 'Techlead Developer',
         companyLink: 'https://altatec-de-occidente-sa-de-cv.negocio.site/',
         activities: [
             {
-                description: "Warehouse management system, made with microservices architecture in .NET Core, NodeJS and Lumen.",
+              description: "OAuth server provider for SaaS purposes, also a RBAC system development module for agnostic management. Built with NodeJS",
+              special: true,
+            },
+            {
+              description: "Agile and Scrum process standarization",
+              special: false,
+            },
+            {
+                description: "Warehouse management system, made with microservices, DDD and CQRS architecture patterns, we use .NET Core, NodeJS and Spring boot for the app's development.",
                 special: true,
             },
             {
@@ -154,7 +162,7 @@ export const jobs:IJob[] = [
                 special: false,
             },
             {
-                description: "Architecture definition with a transition porpuse, it was segmented in different phases to reach an scalable architecture and multi-tenat SaaS software",
+                description: "Architecture definition, department goals and objetives with a transition porpuse, it was segmented in different phases to reach an scalable architecture and multi-tenat SaaS software",
                 special: true,
             },
         ]

@@ -20,4 +20,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+  .experience__content{
+    min-height: 40em;
+  }
 </style>

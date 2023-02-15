@@ -1,17 +1,31 @@
 <template>
-  <div class="jobdetails__container">
-    <div class="jobdetails__description" v-if="selected">
+  <div :class="{jobdetails__selected: selected}">
+    <div 
+      :id="`details-${job.id}`" 
+      class="jobdetails__description"
+      
+      v-if="selected"
+      >
       
       <div class="jobdetails__role">
-        {{job.role}}
+        {{job.role}} at <a target="__blank" :href="job.companyLink">{{ job.company }}</a>
       </div>
+      <div class="jobdetails__period">
+        {{ job.from }} - {{ job.to }}
+      </div>
+
       <div class="jobdetails__activities">
         <div v-for="activity of job.activities" :key="activity.description">
-          {{activity.description}}
+          <li 
+            :class="{jobdetails__activity_special: activity.special }"
+            class="jobdetails__activity">
+            {{activity.description}}
+          </li>
         </div>
       </div>
-    </div>
   </div>
+</div>
+
 </template>
 
 
@@ -38,10 +52,11 @@ export default defineComponent({
 <style lang="scss" scoped>
 .jobdetails__{
 
-  &container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  &selected{
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: .5s;
   }
 
   &company{
@@ -55,14 +70,48 @@ export default defineComponent({
   &description{
     display: flex;
     flex-direction: column;
+    margin-left: 2em;
+    transition-duration: .3s;
 
-    .jobdetails__role{
-      background-color: blue;
+
+    .jobdetails__{
+      &role {
+        color: $color-accent;
+        font-size: $font-size-md;
+
+        a {
+          color: $color-secondary;
+          font-size: $font-size-md;
+        }
+      }
+
+      &period{
+        margin-top: .5em;
+        font-size: $font-size-xs;
+        color: darken($color: $color-primary, $amount: 20%)
+      }
+
+      &activities{
+        .jobdetails__activity{
+          margin-top: 1.5em;
+          
+        }
+        .jobdetails__activity::marker {
+          color: $color-accent; font-weight:bold; 
+          font-size: 2em;
+        }
+        .jobdetails__activity_special::marker {
+          animation: special-activity 2s ease-in-out infinite;
+        }
+      }
+
+      @keyframes special-activity {
+        50% {
+          color: gold;
+        }
+      }
     }
 
-    .jobdetails__activities{
-      background-color: yellow;
-    }
   }
 }
 

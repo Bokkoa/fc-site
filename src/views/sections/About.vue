@@ -10,7 +10,6 @@
                         <p>
                             Hello, my name is Felipe Cruz, and I'm a software engineer!
                             I've been working professionally in software development since 2019.
-                            However, the experiencie year doesn't fool you! As the Spanish says goes, 
                             "No matter how long the tree floats in the river, it will never turn into a crocodile".
                         </p>
                         <p>
@@ -23,16 +22,16 @@
                         </p>
                         
                         <p>
-                            Before my current state, I got a job where my role definition was more accurate, a Semi SR developer. In this
+                            I was working Semi SR developer. In this
                             case, I found that there is still a lot of things to know, so, I trained myself to get an strict study discipline.
-                            At the past of the time, I learned about different subjects, most relevant 
+                            With the past of time, I learned about different subjects, most relevant 
                             <span>
                                 design patterns, unit and integration testing,
                                 clean code, solid, microservices and scrum.
                             </span> 
                         </p>
                         <p>
-                            Currently, I got a promotion as a Tech Lead developer, where I'm learning about 
+                            Currently, I got a promotion as a Tech Lead developer, where I'm learning, successfully applying and practicing about
                             <span>
                                 architectural patterns, leadership,
                                 DevOps culture, Testing Driven Development and Domain Driven Design.

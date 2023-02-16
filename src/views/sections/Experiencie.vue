@@ -1,7 +1,7 @@
 <template>
     <section class="section experience__section">
         <div class="content experience__content">
-            <h2 class="experience__title title__section">Experience Section</h2>
+            <h2 class="experience__title title__section">Experience</h2>
             <JobList />
         </div>
     </section>
@@ -13,7 +13,7 @@ import JobList from '@/components/experience/JobsList.vue'
 
 export default defineComponent({
     name: 'Experience',
-    components:{
+    components: {
         JobList
     }
 })
@@ -21,6 +21,10 @@ export default defineComponent({
 
 <style lang="scss" scoped>
   .experience__content{
-    min-height: 40em;
+    min-height: 37em;
+  }
+
+  .experience__section {
+    margin-top: 10em;
   }
 </style>

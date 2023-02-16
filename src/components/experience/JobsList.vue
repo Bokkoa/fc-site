@@ -55,6 +55,11 @@ export default defineComponent({
   display: flex;
   flex-direction: row;
   // min-height: 25em;
+  @include big-mobile {
+    flex-direction: column;
+    min-width: 0;
+    width: 100%;
+  }
 }
 
 .jobdetails__container{
@@ -62,13 +67,36 @@ export default defineComponent({
     flex-direction: row;
     justify-content: space-between;
     align-self: flex-start;  
+    @include mobile {
+          margin: 0;
+          width: 100%;
+          max-width: 80vw;
+    }
 }
 
 .jobcompanybadge__container{
     display: flex;
     flex-shrink: 0;
     flex-basis: 12em;
-    // background-color: red;
     flex-direction: column;
+
+    @include big-mobile {
+      flex-direction: row;
+      flex-shrink: 1;
+      overflow-y: scroll;
+      flex-basis: auto;
+    }
+
+    @include mobile {
+          margin: 0;
+          width: 100%;
+          max-width: 80vw;
+          margin-bottom: 2em;
+    }
+
+    @include mini-mobile {
+      margin: 0;
+      max-width: 99vw
+    }
 }
 </style>

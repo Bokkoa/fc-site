@@ -1,7 +1,8 @@
 <template>
     <section class="section contact__section">
         <div class="content contact__content">
-            <h2 class="contact__title">Contact Section</h2>
+            <h2 class="contact__title title__section">Contact me!</h2>
+            <p>krivozznova@gmail.com</p>
         </div>
     </section>
 </template>

@@ -32,8 +32,11 @@ body, #app{
     align-items: center;
     display: flex;
     white-space: nowrap;
-    align-self: flex-start;  
-    
+    align-self: flex-start; 
+
+    @include ipad {
+      font-size: $font-size-md;
+    }
     &::after{
         box-sizing: inherit;
         content: "";
@@ -45,6 +48,9 @@ body, #app{
         margin-left: 20px;
         background-color: $color-accent;
 
+        @include ipad {
+          width: 11vw;
+        }
     }
 
     &::before{

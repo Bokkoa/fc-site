@@ -73,7 +73,11 @@ export default defineComponent({
     margin-left: 2em;
     transition-duration: .3s;
 
-
+    @include mobile {
+          margin: 0;
+          max-width: 99vw;
+          width: 100%;
+    }
     .jobdetails__{
       &role {
         color: $color-accent;
@@ -103,6 +107,7 @@ export default defineComponent({
         .jobdetails__activity_special::marker {
           animation: special-activity 2s ease-in-out infinite;
         }
+
       }
 
       @keyframes special-activity {

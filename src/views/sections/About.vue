@@ -77,6 +77,13 @@ export default defineComponent({
         display: flex;
         justify-content: center;
         align-items: center;
+        
+        @include ipad {
+          flex-direction: column;
+        }
+        @include mobile {
+          align-items: flex-start;
+        }
 
 
         .about__image{
@@ -84,10 +91,27 @@ export default defineComponent({
             border-radius: 10%;
             width: 13vw;
             box-shadow: rgba($color-tertiary, 0.25) 0px 25px 50px -12px;
+            
+            @include ipad {
+              margin: 5em;
+              width: 15vw;
+            }
+
+            @include big-mobile {
+              margin: 2em;
+              width: 25vw;
+            }
         }
 
         .about__description{
             margin-right: 1.5rem;
+            @include ipad {
+                 flex-direction: column;
+                 max-width: 70vw;
+            }
+            @include mobile {
+              margin: 0;
+            }
         }
 
         
@@ -97,10 +121,14 @@ export default defineComponent({
     &stack{
         display: flex;
         justify-content: space-around;
-
         li {
             padding-left: 1.3em;
             list-style: none;
+           
+            @include mobile {
+              padding-left: .2em;
+              margin-bottom: .3em;
+            }
         }
         li:before {
             content: "*"; 
@@ -109,6 +137,22 @@ export default defineComponent({
             margin-left: -1.3em;
             width: 1.3em;
         }
+
+        
+        
+      @include big-mobile {
+        overflow-y: scroll;
+        flex-basis: auto;
+        min-width: 0;
+        max-width: 99vw;
+      }
+
+      @include mobile {
+            margin: 0;
+            width: 100%;
+            max-width: 80vw;
+            flex-direction: column;
+      }
     }
 
     &content{

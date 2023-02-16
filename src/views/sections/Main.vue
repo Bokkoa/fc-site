@@ -63,6 +63,12 @@ export default defineComponent({
     min-height: 100vh;
     padding: 0px;
 
+    @include mobile {
+        margin: 0;
+        width: 100%;
+        max-width: 80vw;
+        margin-bottom: 2em;
+    }
    
     .main__title{
         margin: 0;

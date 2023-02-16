@@ -28,7 +28,6 @@ export default defineComponent({
 .home__content{
     display: flex;
     flex-direction: column;
-    align-items: center;
 
     @include retina{
         margin-top: 5em;

@@ -21,7 +21,7 @@
       margin: 2em;
       width: 100%;
     }
-    @include mobile {
+    @include big-mobile {
       max-width: 90vw;
     }
     @include mini-mobile {

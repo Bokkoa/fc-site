@@ -67,7 +67,7 @@ export default defineComponent({
     flex-direction: row;
     justify-content: space-between;
     align-self: flex-start;  
-    @include mobile {
+    @include big-mobile {
           margin: 0;
           width: 100%;
           max-width: 80vw;

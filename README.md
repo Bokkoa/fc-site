@@ -5,8 +5,8 @@ This is my own webpage, currently is in progress.
 ## Todo
 ---
 - [ ] Modify the logo's colors
-- [ ] Select better pallete colors
-- [ ] Fix the vw for bg image and navbar on tablet and mobile size
+- [x] Select better pallete colors
+- [x] Fix the vw for bg image and navbar on tablet and mobile size
 - [x] Random background imagen when loads
 - [x] Append cv to main section
 - [x] Add About section

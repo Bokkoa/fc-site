@@ -44,7 +44,7 @@ export const projects: Project[] =  [
     },
     {
       title: "Presentation Page",
-      description: `My First presentation page, as work i cant highlight the darktheme mode`,
+      description: `My First presentation page, I can highlight the darktheme mode`,
       url: "",
       image: `/img/projects/${fc_site.path}/01.png`,
       album: fc_site,

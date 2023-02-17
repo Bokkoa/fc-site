@@ -22,7 +22,7 @@
                         </p>
                         
                         <p>
-                            I was working Semi SR developer. In this
+                            Before my current job, I was working as Semi SR developer. In this
                             case, I found that there is still a lot of things to know, so, I trained myself to get an strict study discipline.
                             With the past of time, I learned about different subjects, most relevant 
                             <span>

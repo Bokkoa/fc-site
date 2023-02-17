@@ -17,6 +17,7 @@ export const contaliteAppAlbum = { maxPhotoNumber: 1, path: 'contalite_app'};
 export const contaliteAdminAlbum = { maxPhotoNumber: 1, path: 'contalite_admin'};
 export const adiAlbum = { maxPhotoNumber: 7, path: 'adi'};
 export const documentalAlbum = { maxPhotoNumber: 4, path: 'documental'};
+export const fc_site= { maxPhotoNumber: 2, path: 'fc_site'};
 
 
 export const projects: Project[] =  [
@@ -40,6 +41,14 @@ export const projects: Project[] =  [
       image: `/img/projects/${documentalAlbum.path}/01.png`,
       album: documentalAlbum,
       tools: ['Firebase Push Notifications', 'Laravel', 'Laravel Echo', 'AWS S3', 'SMTP Client' ,'Vue (as maintainer)'],
+    },
+    {
+      title: "Presentation Page",
+      description: `My First presentation page, as work i cant highlight the darktheme mode`,
+      url: "",
+      image: `/img/projects/${fc_site.path}/01.png`,
+      album: fc_site,
+      tools: ['Dark mode', 'GatsbyJS (React)'],
     },
     {
         title: "Contalite WebApp",

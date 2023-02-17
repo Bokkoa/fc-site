@@ -112,7 +112,7 @@ export const jobs:IJob[] = [
         companyLink: 'https://altatec-de-occidente-sa-de-cv.negocio.site/',
         activities: [
             {
-                description: "Development on courses platform, made with Node and VueJs.",
+                description: "Development on e-learning and courses platform, made with Node and VueJs.",
                 special: false
             },
             {
@@ -128,7 +128,7 @@ export const jobs:IJob[] = [
                 special: false,
             },
             {
-                description: "Documental changes, an application for ISO requirements that allows to quality department agilizes its processes for employee's documentation. Made with Laravel for API rest and push notifications with Firebase service and aws S3 Storage integration",
+                description: "Documental, an application for ISO requirements that allows to quality department agilizes its processes for employee's documentation. Made with Laravel for API rest and push notifications with Firebase service and aws S3 Storage integration",
                 special: false,
             }
         ]

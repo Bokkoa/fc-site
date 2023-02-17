@@ -15,9 +15,32 @@ export const profacadAlbum = { maxPhotoNumber: 6, path: 'profacad'};
 export const laptopManagerAlbum = { maxPhotoNumber: 4, path: 'laptop_manager'};
 export const contaliteAppAlbum = { maxPhotoNumber: 1, path: 'contalite_app'};
 export const contaliteAdminAlbum = { maxPhotoNumber: 1, path: 'contalite_admin'};
+export const adiAlbum = { maxPhotoNumber: 7, path: 'adi'};
+export const documentalAlbum = { maxPhotoNumber: 4, path: 'documental'};
 
 
 export const projects: Project[] =  [
+      {
+        title: "ADI E-learning",
+        description: `A software for company internal use, has features like statistics about time and courses quantity, 
+                      tests creation, poll with score for course quality,
+                      courses edition and building, asignations, and users management,
+                      role based access
+                      `,
+        url: "",
+        image: `/img/projects/${adiAlbum.path}/01.png`,
+        album: adiAlbum,
+        tools: ['NodeJS', 'Typescript', 'AWS S3', 'SMTP Client' ,'Vue (as maintainer)'],
+    },
+    {
+      title: "Documental",
+      description: `Requests management system for changes on company personal documentation, based on quality department rules, \
+                  has features like statistics view, user management, role based access and push notifications`,
+      url: "",
+      image: `/img/projects/${documentalAlbum.path}/01.png`,
+      album: documentalAlbum,
+      tools: ['Firebase Push Notifications', 'Laravel', 'Laravel Echo', 'AWS S3', 'SMTP Client' ,'Vue (as maintainer)'],
+    },
     {
         title: "Contalite WebApp",
         description: `Accounting and electronic billing system, developed with laravel y react, 
@@ -36,7 +59,7 @@ export const projects: Project[] =  [
         tools: ['Material Ui', 'Laravel', 'React', 'Axios', 'Xml', 'Sass', 'Mysql'],
     },
     {
-        title: "Laptop Manager",
+        title: "Laptop Manager ASM",
         description: `Assets Management System, has multiple features as assets assignations to users, movements statistics and a scanner section to validate asset owners at company entrance.`,
         url: "",
         image: `/img/projects/${laptopManagerAlbum.path}/01.png`,

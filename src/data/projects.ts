@@ -17,11 +17,22 @@ export const contaliteAppAlbum = { maxPhotoNumber: 1, path: 'contalite_app'};
 export const contaliteAdminAlbum = { maxPhotoNumber: 1, path: 'contalite_admin'};
 export const adiAlbum = { maxPhotoNumber: 7, path: 'adi'};
 export const documentalAlbum = { maxPhotoNumber: 4, path: 'documental'};
-export const fc_site= { maxPhotoNumber: 2, path: 'fc_site'};
+export const fcSiteAlbum = { maxPhotoNumber: 2, path: 'fc_site'};
+export const rfidMiddlwareAlbum= { maxPhotoNumber: 2, path: 'rfid_middleware'};
 
 
 export const projects: Project[] =  [
-      {
+  {
+    title: "RFID Middleware",
+    description: `RFID Middleware is a module that can be used with the SaaS products in the company for add RFID read feature
+                  Compatible with WMS, made with Vue and Spring Boot
+                  `,
+    url: "",
+    image: `/img/projects/${rfidMiddlwareAlbum.path}/01.png`,
+    album: adiAlbum,
+    tools: ['NodeJS', 'Typescript', 'SpringBoot', 'SMTP Client' ,'Vue (as maintainer)', 'MongoDB'],
+  },
+  {
         title: "ADI E-learning",
         description: `A software for company internal use, has features like statistics about time and courses quantity, 
                       tests creation, poll with score for course quality,
@@ -46,8 +57,8 @@ export const projects: Project[] =  [
       title: "Presentation Page",
       description: `My First presentation page, I can highlight the darktheme mode`,
       url: "",
-      image: `/img/projects/${fc_site.path}/01.png`,
-      album: fc_site,
+      image: `/img/projects/${fcSiteAlbum.path}/01.png`,
+      album: fcSiteAlbum,
       tools: ['Dark mode', 'GatsbyJS (React)'],
     },
     {

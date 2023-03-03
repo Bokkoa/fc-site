@@ -1,5 +1,6 @@
 module.exports = {
-    pluginOptions:{
+  base:'/fc-site/',
+  pluginOptions:{
         i18n: {
             locale: 'es',
             fallbackLocale: 'en',

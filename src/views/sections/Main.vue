@@ -1,7 +1,9 @@
 <template>
     <section class="section main__section">
         <div class="content main__content">
-
+            <div class="main__title">
+              <h4 style="color: red">Work In Progress</h4>
+            </div>
             <div class="main__title animate__animated animate__fadeInLeft">
                 <h4 class="main__introduction">Hello, my name is </h4>
             </div>

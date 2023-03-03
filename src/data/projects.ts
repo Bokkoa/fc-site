@@ -19,7 +19,7 @@ export const adiAlbum = { maxPhotoNumber: 7, path: 'adi'};
 export const documentalAlbum = { maxPhotoNumber: 4, path: 'documental'};
 export const fcSiteAlbum = { maxPhotoNumber: 2, path: 'fc_site'};
 export const rfidMiddlwareAlbum= { maxPhotoNumber: 2, path: 'rfid_middleware'};
-
+export const imperityQuoterAlbum = {maxPhotoNumber: 8, path: 'quoter' }
 
 export const projects: Project[] =  [
   {
@@ -29,8 +29,18 @@ export const projects: Project[] =  [
                   `,
     url: "",
     image: `/img/projects/${rfidMiddlwareAlbum.path}/01.png`,
-    album: adiAlbum,
-    tools: ['NodeJS', 'Typescript', 'SpringBoot', 'SMTP Client' ,'Vue (as maintainer)', 'MongoDB'],
+    album: rfidMiddlwareAlbum,
+    tools: ['NodeJS', 'Typescript', 'SpringBoot', 'Web Sockets' ,'Vue (as maintainer)', 'MongoDB', 'AMQP RabbitMQ'],
+  },
+  {
+    title: "Imperity Quoter",
+    description: `Imperity Quoter is a Quotation Management System made for Altatec quotation flows, it counts with features as pdf quotation download,
+                  Email send, excel price list sinchronization. Made with mciroservices, .Net Core, Django and Node
+                  `,
+    url: "",
+    image: `/img/projects/${imperityQuoterAlbum.path}/01.png`,
+    album: imperityQuoterAlbum,
+    tools: ['.NET Core (as maintainer)', 'Django','Vue (as maintainer)', 'PostgreSQL', 'MySQL', 'MSSQL', 'TDD', 'Microservices', 'Docker', 'AWS Lambda', 'AWS S3'],
   },
   {
         title: "ADI E-learning",
@@ -42,7 +52,7 @@ export const projects: Project[] =  [
         url: "",
         image: `/img/projects/${adiAlbum.path}/01.png`,
         album: adiAlbum,
-        tools: ['NodeJS', 'Typescript', 'AWS S3', 'SMTP Client' ,'Vue (as maintainer)'],
+        tools: ['NodeJS', 'Typescript', 'AWS S3', 'SMTP Client' ,'Vue (as maintainer)', 'Docker'],
     },
     {
       title: "Documental",
@@ -51,7 +61,7 @@ export const projects: Project[] =  [
       url: "",
       image: `/img/projects/${documentalAlbum.path}/01.png`,
       album: documentalAlbum,
-      tools: ['Firebase Push Notifications', 'Laravel', 'Laravel Echo', 'AWS S3', 'SMTP Client' ,'Vue (as maintainer)'],
+      tools: ['Firebase Push Notifications', 'Laravel', 'Laravel Echo', 'AWS S3', 'SMTP Client' ,'Vue (as maintainer)', 'Docker'],
     },
     {
       title: "Presentation Page",

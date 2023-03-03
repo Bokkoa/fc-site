@@ -1,5 +1,5 @@
 module.exports = {
-  base:'/fc-site/',
+  publicPath: '/fc-site/',
   pluginOptions:{
         i18n: {
             locale: 'es',

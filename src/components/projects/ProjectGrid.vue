@@ -26,10 +26,8 @@ export default defineComponent({
   setup() {
     const store = useStore();
     const projects = ref(store.state.projects)
-    const baseUrl = ref(store.state.baseUrl)
     return {
       projects,
-      baseUrl
     }
   },
 })

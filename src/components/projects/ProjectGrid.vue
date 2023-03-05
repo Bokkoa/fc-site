@@ -30,7 +30,6 @@ export default defineComponent({
     const getImgUrl = (imagePath: string) => {
       // const imgPath = new URL(`../../assets/${imagePath}`, import.meta.url).href
       // return imagePath
-      console.log(`../../assets/${imagePath}`);
       return require(`../../assets/${imagePath}`)
     }
     return {

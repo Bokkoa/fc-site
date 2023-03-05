@@ -5,7 +5,7 @@
         <h4>{{ item.title }}</h4>
         <p>{{ item.description }}</p>
         <figure>
-          <img :src="`${item.image}`" alt="">
+          <img :src="getImgUrl(item.image)" alt="">
         </figure>
       </div>
       <div class="projects__stack">
@@ -26,8 +26,16 @@ export default defineComponent({
   setup() {
     const store = useStore();
     const projects = ref(store.state.projects)
+
+    const getImgUrl = (imagePath: string) => {
+      // const imgPath = new URL(`../../assets/${imagePath}`, import.meta.url).href
+      // return imagePath
+      console.log(`../../assets/${imagePath}`);
+      return require(`../../assets/${imagePath}`)
+    }
     return {
       projects,
+      getImgUrl
     }
   },
 })

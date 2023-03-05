@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/fc-site/precache-manifest.b8a1b6f6afc2b5a3162868cff774869e.js"
+  "/fc-site/precache-manifest.6d5887c73116caf370f982edf522f9d0.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "bokkoa-site"});

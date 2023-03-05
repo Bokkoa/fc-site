@@ -5,7 +5,7 @@
         <h4>{{ item.title }}</h4>
         <p>{{ item.description }}</p>
         <figure>
-          <img :src="item.image" alt="">
+          <img :src="getImgUrl(item.image)" alt="">
         </figure>
       </div>
       <div class="projects__stack">

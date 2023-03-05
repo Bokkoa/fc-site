@@ -24,7 +24,7 @@
                 </p>
             </div>
             <div class="animate__animated animate__fadeIn">
-                <a id="cv-button" :href="`${baseUrl}/docs/CV.pdf`" target="_blank">
+                <a id="cv-button" href="./docs/CV.pdf" target="_blank">
                     Download my CV!
                 </a>
             </div>

@@ -1,12 +1,12 @@
-interface AlbumSpecs {
+export interface IAlbumSpecs {
   maxPhotoNumber: number
   path: string
 }
-interface Project {
+export interface IProject {
   title: string
   description: string
   url: string
-  album: AlbumSpecs
+  album: IAlbumSpecs
   image: string
   tools: string[]
 }
@@ -21,7 +21,7 @@ export const fcSiteAlbum = { maxPhotoNumber: 2, path: 'fc_site'};
 export const rfidMiddlwareAlbum= { maxPhotoNumber: 2, path: 'rfid_middleware'};
 export const imperityQuoterAlbum = {maxPhotoNumber: 8, path: 'quoter' }
 
-export const projects: Project[] =  [
+export const projects: IProject[] =  [
   {
     title: "RFID Middleware",
     description: `RFID Middleware is a module that can be used with the SaaS products in the company for add RFID read feature

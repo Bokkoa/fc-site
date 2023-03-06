@@ -20,5 +20,8 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-
+    // allows grid system
+    .projects__content {
+      width: 100%;
+    }
 </style>

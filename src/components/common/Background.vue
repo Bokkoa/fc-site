@@ -33,20 +33,6 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 
-// // style that works without random bg
-// .background__section{
-//     width: 99vw;
-//     min-height: 76vh;
-//     padding: 0;
-//     position:absolute;
-
-//     background-image: linear-gradient(  rgba($color-darkest, 1), rgba($color-darkest, 0), rgba($color-darkest, 1)), url('../assets/imgs/background01.jpg');
-//     background-size: cover;
-//     background-position: 0;
-    
-// }
-
-
 // with image
 .background__section{
     width: 100%;
@@ -73,6 +59,10 @@ export default defineComponent({
         opacity: .7;
         width: 100%;
         height: 600px;
+
+        @include big-mobile {
+          object-fit: cover;
+        }
 
     }
     

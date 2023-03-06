@@ -79,12 +79,14 @@ export default defineComponent({
     flex-shrink: 0;
     flex-basis: 12em;
     flex-direction: column;
+    flex-wrap: wrap;
 
     @include big-mobile {
       flex-direction: row;
       flex-shrink: 1;
-      overflow-y: scroll;
       flex-basis: auto;
+      justify-content: space-between;
+      margin-bottom: 4em;
     }
 
     @include mobile {

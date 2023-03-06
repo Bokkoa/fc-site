@@ -16,13 +16,23 @@
     margin-left: 25vw;
     margin-right: 25vw;
     min-width: 60em;
-    @include small-pc{
-      min-width: 0em;
-      margin: 2em;
-      width: 100%;
+    
+
+    @include medium-pc {
+      margin-left: 15vw;
+      margin-right: 15vw;
     }
+
+    @include smart-screen {
+      margin-left: 4vw;
+      margin-right: 4vw;
+    }
+
     @include big-mobile {
       max-width: 90vw;
+      margin-left: 7vw;
+      margin-right: 7vw;
+      min-height: 80vh;
     }
     @include mini-mobile {
       max-width: 70vw

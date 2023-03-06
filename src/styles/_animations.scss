@@ -38,6 +38,12 @@
 }
 
 
+// Gray effect
+.gray-effect:hover {
+  -webkit-filter: grayscale(100%) blur(3px);
+  filter: grayscale(100%) blur(3px);
+}
+
 // Underline
 
 .underlined{
@@ -86,10 +92,12 @@
 	0%{
 		padding-bottom: 1em;
 		padding-top: 1em;
+    background-color: $color-darkest;
 	}
 	100%{
 		padding-bottom: 5px;
 		padding-top: 5px;
+    background-color: none;
 	}
 }
 
@@ -98,11 +106,13 @@
 	0%{
 		padding-bottom: 5px;
 		padding-top: 5px;
+    background-color: none;
 	}
 
 	100%{
 		padding-bottom: 1em;
 		padding-top: 1em;
+    background-color: $color-darkest;
 	}
 }
 
@@ -161,3 +171,6 @@
         drop-shadow(-1px -1px 0 rgba(51, 51, 51, 0)); 
     }
 }
+
+
+// on hover card

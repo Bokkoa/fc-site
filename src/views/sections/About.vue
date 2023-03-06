@@ -47,13 +47,10 @@
             <ul class="about__stack">
                 <li>React</li>
                 <li>Vue</li>
-                <!-- <li>Laravel</li> -->
                 <li>Node</li>
                 <li>NestJS</li>
                 <li>.NET Core</li>
-                <!-- <li>GO</li> -->
                 <li>Docker</li>
-                <!-- <li>Django</li> -->
             </ul>
 
         </div>
@@ -97,16 +94,21 @@ export default defineComponent({
             }
 
             @include big-mobile {
-              margin: 2em;
-              width: 25vw;
+              margin: 3em;
+              width: 50vw;
             }
         }
 
         .about__description{
             margin-right: 1.5rem;
+
             @include ipad {
                  flex-direction: column;
                  max-width: 70vw;
+            }
+
+            @include big-mobile {
+              margin-right: 0;
             }
             @include mobile {
               margin: 0;
@@ -118,16 +120,24 @@ export default defineComponent({
     }
     
     &stack{
+        flex-wrap: wrap;
         display: flex;
         justify-content: space-around;
+
+        @include big-mobile {
+          margin: 0;
+          padding: 0;
+        }
+
         li {
             padding-left: 1.3em;
             list-style: none;
-           
-            @include mobile {
-              padding-left: .2em;
-              margin-bottom: .3em;
+
+            @include big-mobile {
+              margin: 4vw;
+              padding-left: 1em;
             }
+         
         }
         li:before {
             content: "*"; 

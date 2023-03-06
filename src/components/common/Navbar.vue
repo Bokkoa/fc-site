@@ -19,7 +19,8 @@
                 </ol>
             </div>
             <div class="nav__bars">
-                :D
+                <!-- the burger menu -->
+                <!-- :D -->
             </div>
         </nav>
     </header>
@@ -60,7 +61,7 @@ export default defineComponent({
 
 .nav__header{
     align-content: space-between;
-    background-color: $color-darkest;
+    // background-color: $color-darkest;
     display: flex;
     position: fixed;
     width: 100%;
@@ -128,6 +129,11 @@ export default defineComponent({
 .logo{
     width: 4em;
     animation: pulse-accent infinite 3s linear;
+
+    @include big-mobile {
+      width: 3em;
+      margin-left: 1em;
+    }
 }
 
 </style>

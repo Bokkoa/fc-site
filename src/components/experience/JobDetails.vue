@@ -31,7 +31,7 @@
 
 <script lang="ts">
 import { IJob } from '@/data/jobs';
-import{ defineComponent, PropType, ref, Ref } from 'vue';
+import{ defineComponent, PropType } from 'vue';
 
 export default defineComponent({
   title: 'JobDetails',

@@ -65,6 +65,10 @@ export default defineComponent({
     min-height: 100vh;
     padding: 0px;
 
+    @include big-mobile {
+      max-width: 92vw;
+    }
+
     @include mobile {
         margin: 0;
         width: 100%;

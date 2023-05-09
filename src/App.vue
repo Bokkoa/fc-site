@@ -4,6 +4,7 @@
       <Background />
       <Navbar />
       <!-- <router-view/> -->
+      <ModalGallery />
       <Home />
       <AuxiliarResources />
   </div>
@@ -16,6 +17,7 @@ import  Navbar from '@/components/common/Navbar.vue';
 import Background from "./components/common/Background.vue";
 import AuxiliarResources from "./components/common/AuxiliarResources.vue";
 import Home from '@/views/Home.vue';
+import ModalGallery from "./components/common/ModalGallery.vue";
 
 export default defineComponent({
   name: 'App',
@@ -24,7 +26,8 @@ export default defineComponent({
     Home, 
     Navbar,
     Background,
-    AuxiliarResources
+    AuxiliarResources,
+    ModalGallery
 },
 })
 </script>

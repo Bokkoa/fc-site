@@ -1,28 +1,65 @@
 <template>
-  <div class="modal-container">
-    <div class="modal">
-      <h1>Hi</h1>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias rerum iste voluptate maiores ipsum, quam placeat, vitae alias labore expedita illo dolorem facere exercitationem deserunt iure, incidunt dignissimos doloribus quas?</p>
-      <button>Confirm</button>
+  <div class="gallery__bg">
+    <div class="gallery__container">
+      <div class="gallery__modal">
+        <h3>RFID Middleware</h3>
+        <div class="gallery__img">
+          <div class="gallery__prev_btn">
+            <button>&lt;</button>
+          </div>
+          <img
+            :src="getImgUrl('imgs/projects/rfid_middleware/01.png')"
+            alt=""
+          />
+          <div class="gallery__next_btn">
+            <button>&gt;</button>
+          </div>
+        </div>
+        <button>Confirm</button>
+      </div>
     </div>
   </div>
 </template>
 
-<script>
-export default {
-  
-}
+<script lang="ts">
+import { getImgUrl } from "@/helpers/imageHelper";
+import { defineComponent } from "vue";
+
+export default defineComponent({
+  setup() {
+    return {
+      getImgUrl,
+    };
+  },
+});
 </script>
 
 <style lang="scss" scoped>
-
-
-  .modal-container {
+.gallery__bg {
+  background-color: rgba($color-darkest, 0.88);
+  width: 100vw;
+  height: 100vh;
   position: fixed;
-  top: 30vh;
-  left: 25vw;
-  width: 50%;
-  overflow:auto; 
+  z-index: 9;
+}
+
+.gallery__img {
+  display: flex;
+  align-items: center;
+  gap: 3em;
+  img {
+    width: 40vw;
+    height: 40vh;
+    border-radius: 0.5em;
+  }
+}
+
+.gallery__container {
+  position: fixed;
+  top: 20vh;
+  left: 20vw;
+  width: 60%;
+  overflow: auto;
   border-radius: 1rem;
   background: rgba(0, 0, 0, 0.313);
   box-shadow: -1px 3px 8px -1px rgba(0, 0, 0, 0.5);
@@ -32,29 +69,26 @@ export default {
   align-items: center;
   z-index: 99;
 
-  .modal {
+  .gallery__modal {
     text-align: center;
     padding: 2em;
     display: flex;
     flex-direction: column;
+    gap: 2em;
 
-    h2 {
+    h3 {
       font-size: 1.5rem;
-      margin-bottom: 1.5rem;
-    }
-
-    p {
-      font-size: 1.1rem;
-      line-height: 1.5;
-      margin-bottom: 2rem;
+      margin: 0.1em;
+      color: $color-primary;
     }
 
     button {
-      background-color: #0077ff;
-      color: white;
+      background-color: transparent;
+      border-color: transparent;
+      border-radius: $border-radius-sm;
+      border-style: solid;
+      color: $color-accent;
       padding: 0.5rem 1rem;
-      border: none;
-      border-radius: 0.5rem;
       font-size: 1.1rem;
       cursor: pointer;
       transition: all 0.2s ease-in-out;
@@ -66,5 +100,4 @@ export default {
     }
   }
 }
-
 </style>

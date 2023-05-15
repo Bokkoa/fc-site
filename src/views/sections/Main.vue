@@ -124,7 +124,8 @@ export default defineComponent({
     border-color: $color-accent;
     color: $color-accent;
     cursor: pointer;
-    font-size: $font-size-sm + .05rem;
+    // font-size: $font-size-sm + .05rem;
+    transform: scale(1.05);
 }
 
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="projects__details">
+  <div class="projects__details" @click="selectProject">
         <h4>{{ project.title }}</h4>
         <p>{{ project.description }}</p>
         <figure class="gray-effect">
@@ -17,6 +17,7 @@
 import { defineComponent, PropType } from 'vue'
 import { getImgUrl } from '@/helpers/imageHelper';
 import { IProject } from '../../data/projects';
+import { useStore } from 'vuex';
 
 export default defineComponent({
   name: 'ProjectItem',
@@ -26,9 +27,12 @@ export default defineComponent({
       required: true
     }
   },
-  setup() {
+  setup(props) {
+    const store = useStore()
+
     return {
-      getImgUrl
+      getImgUrl,
+      selectProject: () => store.commit('selectProject', props.project.id)
     }
   },
 })

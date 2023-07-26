@@ -1,21 +1,21 @@
 <template>
-  <div class="gallery__bg">
+  <div class="gallery__bg" v-if="isShowingModal">
     <div class="gallery__container">
       <div class="gallery__modal">
-        <h3>RFID Middleware</h3>
-        <div class="gallery__img">
+        <h3>{{project.title}}</h3>
+        <div class="gallery__img_section">
           <div class="gallery__prev_btn">
-            <button>&lt;</button>
+            <button :disabled="currentImageIndex <= 0"  @click="onChangeImage(-1)">&lt;</button>
           </div>
           <img
-            :src="getImgUrl('imgs/projects/rfid_middleware/01.png')"
+            :src="getImgUrl(`imgs/projects/${project.album.path}/0${currentImageIndex}.png`)"
             alt=""
           />
           <div class="gallery__next_btn">
-            <button>&gt;</button>
+            <button @click="onChangeImage(1)">&gt;</button>
           </div>
         </div>
-        <button>Confirm</button>
+        <button :disabled="currentImageIndex >= project.album.maxPhotoNumber" @click="onClick">Confirm is closed: {{isShowingModal}}</button>
       </div>
     </div>
   </div>
@@ -23,14 +23,46 @@
 
 <script lang="ts">
 import { getImgUrl } from "@/helpers/imageHelper";
-import { defineComponent } from "vue";
+import { computed, defineComponent, ref } from "vue";
+import { useStore } from "vuex";
 
 export default defineComponent({
+  name: 'ModalGallery',
   setup() {
+    const store = useStore()
+    const project = computed(() => store.state.selectedProject)
+    const currentImageIndex = ref(1)
+    const onClick = () => {
+      store.commit('toggleProjectModal')
+    }
+    const onChangeImage = (next: number) => {
+      console.log(next)
+      const limitIndex = project.value.album.maxPhotoNumber
+      const nextPhotoIndex = isNegativeNumber(next) 
+                            ? currentImageIndex.value - next 
+                            : currentImageIndex.value + next
+      console.log(limitIndex)
+      console.log(nextPhotoIndex)
+      if((limitIndex > nextPhotoIndex) && !isNegativeNumber(nextPhotoIndex) ) {
+        currentImageIndex.value = nextPhotoIndex
+      } else {
+        console.warn('Is not a valid new number')
+      }
+
+    }
+    const isNegativeNumber = (value: number):boolean => {
+      return value < 0
+    }
     return {
       getImgUrl,
+      onClick,
+      isShowingModal: computed( () => store.state.showProjectModal),
+      project,
+      currentImageIndex,
+      onChangeImage
     };
   },
+  
 });
 </script>
 
@@ -40,25 +72,25 @@ export default defineComponent({
   width: 100vw;
   height: 100vh;
   position: fixed;
-  z-index: 9;
+  z-index: 2;
 }
 
-.gallery__img {
+.gallery__img_section {
   display: flex;
   align-items: center;
-  gap: 3em;
+  gap: 2em;
   img {
-    width: 40vw;
-    height: 40vh;
+    width: 70vw;
+    height: 65vh;
     border-radius: 0.5em;
   }
 }
 
 .gallery__container {
   position: fixed;
-  top: 20vh;
-  left: 20vw;
-  width: 60%;
+  top: 2vh;
+  left: 10vh;
+  width: 90%;
   overflow: auto;
   border-radius: 1rem;
   background: rgba(0, 0, 0, 0.313);
@@ -67,7 +99,7 @@ export default defineComponent({
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 99;
+  z-index: 3;
 
   .gallery__modal {
     text-align: center;
